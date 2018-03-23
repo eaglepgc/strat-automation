@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Strat Regres]">
+  <test name="Full Regres(failed)">
+    <classes>
+      <class name="strat_regresion_test.RequestPassword">
+        <methods>
+          <include name="setUp"/>
+          <include name="test"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- strat_regresion_test.RequestPassword -->
+    </classes>
+  </test> <!-- Full Regres(failed) -->
+</suite> <!-- Failed suite [Strat Regres] -->

@@ -1,0 +1,9 @@
+package strat_regresion_test;
+
+import org.testng.annotations.Test;
+
+public class Edit_Priority {
+  @Test
+  public void f() {
+  }
+}

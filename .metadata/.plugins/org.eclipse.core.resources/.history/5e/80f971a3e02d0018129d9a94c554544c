@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Strat Regres" parallel="tests" thread-count="2">
+		<parameter name="browser" value="chrome"></parameter>
+	
+	<test name="Chrome test" preserve-order="true">
+	
+		<classes>
+			<class name="strat_regresion_test.RequestPassword"></class>
+			<class name="strat_regresion_test.Login"></class>
+			<class name="strat_regresion_test.Institution_Selector_Cobb"></class>
+			<class name="strat_regresion_test.Envisioning"></class>
+			<class name="strat_regresion_test.AddPurpose"></class>
+			<class name="strat_regresion_test.Nav_Dashboard"></class>		
+			<class name="strat_regresion_test.Dashboard_regresion"></class>
+			<class name="strat_regresion_test.Nav_ManageUsers"></class>
+			<class name="strat_regresion_test.Add_User"></class>
+			<class name="strat_regresion_test.Enable_User"></class>
+			<class name="strat_regresion_test.Disable_User"></class>
+			<class name="strat_regresion_test.Removing_User"></class>
+			<class name="base.Logout"></class>
+		</classes>
+	</test>
+</suite>

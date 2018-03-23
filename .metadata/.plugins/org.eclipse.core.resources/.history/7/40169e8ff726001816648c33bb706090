@@ -1,0 +1,69 @@
+package strat_regresion_test;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.Open_Close_Browser_Chorme;
+
+public class AddEnableDisableRemoveUserFlow extends Open_Close_Browser_Chorme{
+  
+  @Test //Testing users
+  public void test() throws InterruptedException { 
+	  //Adding a user
+	  driver.findElement(By.xpath("/html/body/app-root/app-usermgmt/div/div/div/button")).click();
+	  Thread.sleep(1000); // Let the user actually see something!
+	  driver.findElement(By.name("email")).sendKeys("autostratuser@yopmail.com");
+	  driver.findElement(By.className("ui-dropdown-trigger")).click();
+	  Thread.sleep(3000); // Let the user actually see something!
+	  //Click on "Admin" with force vissable trick.
+	  int ok_size=driver.findElements(By.xpath("//ul/li[3]/span")).size();
+	  driver.findElements(By.xpath("//ul/li[3]/span")).get(ok_size-1).click();
+	  Thread.sleep(2000); // Let the user actually see something!
+	  //Sending access email
+	  driver.findElement(By.className("checkbox-branded")).click();
+	  Thread.sleep(2000); // Let the user actually see something!
+	  //Click Submit
+	  driver.findElement(By.xpath("/html/body/div[3]/app-add-user/div/form/div[4]/button[2]")).click();
+	  Thread.sleep(10000); // Let the user actually see something!
+	  Assert.assertTrue(driver.getPageSource().contains("DO NOT DELETE AUTOMATION"));
+	  //Verifying Invited Status
+	  String invitedStatus = driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[3]/span/div/div")).getText();
+	  assertTrue(invitedStatus.contains("Invited"));
+	  //Clicking Action Menu 
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[5]/span/div/i")).click();
+	  Thread.sleep(3000); // Let the user actually see something!
+	  //Click Enable
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/p-menu/div/ul/li[3]/a")).click();
+	  Thread.sleep(3000); // Let the user actually see something!
+	  //Verifying Enabled Status
+	  String enabledStatus = driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[3]/span/div/div")).getText();
+	  assertTrue(enabledStatus.contains("Enabled"));
+	  //Clicking Action Menu 
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[5]/span/div/i")).click();
+	  Thread.sleep(3000); // Let the user actually see something!
+	  //Click Disable
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/p-menu/div/ul/li[4]/a")).click();
+	  Thread.sleep(3000); // Let the user actually see something!
+	  //Clicking Yes, Disable
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/p-dialog/div/div[3]/p-footer/button[2]")).click();
+	  Thread.sleep(3000); // Let the user actually see something!
+	  //Verifying Disabled Status
+	  String disabledStatus = driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[3]/span/div/div")).getText();
+	  assertTrue(disabledStatus.contains("Disabled"));
+	  //Clicking Action Menu 
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[5]/span/div/i")).click();
+	  Thread.sleep(3000); // Let the user actually see something!
+      //Clicking Remove
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/p-menu/div/ul/li[5]/a/span[2]")).click();
+	  Thread.sleep(5000); // Let the user actually see something!
+	  //Clicking Yes, Remove
+	  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/p-dialog/div/div[3]/p-footer/button[2]")).click();
+	  Thread.sleep(10000); // Let the user actually see something!
+	  Assert.assertFalse(driver.getPageSource().contains("DO NOT DELETE AUTOMATION"));
+
+
+  }
+  }

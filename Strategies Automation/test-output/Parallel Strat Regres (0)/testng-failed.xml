@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel Strat Regres (0)]" parallel="tests">
+  <test name="Chrome test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="base.Logout">
+        <methods>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- base.Logout -->
+      <class name="strat_regresion_test.Institution_Selector_Cobb">
+        <methods>
+          <include name="institution_selector_cobb"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- strat_regresion_test.Institution_Selector_Cobb -->
+      <class name="strat_regresion_test.Dashboard_regresion">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="NewStrategy"/>
+        </methods>
+      </class> <!-- strat_regresion_test.Dashboard_regresion -->
+      <class name="strat_regresion_test.Login">
+        <methods>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- strat_regresion_test.Login -->
+      <class name="strat_regresion_test.AddEditEnableDisableRemoveUserFlow">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- strat_regresion_test.AddEditEnableDisableRemoveUserFlow -->
+      <class name="strat_regresion_test.Nav_ManageUsers">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="manageusers"/>
+        </methods>
+      </class> <!-- strat_regresion_test.Nav_ManageUsers -->
+      <class name="strat_regresion_test.RequestPassword">
+        <methods>
+          <include name="setUp"/>
+          <include name="test"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- strat_regresion_test.RequestPassword -->
+    </classes>
+  </test> <!-- Chrome test(failed) -->
+</suite> <!-- Failed suite [Parallel Strat Regres (0)] -->

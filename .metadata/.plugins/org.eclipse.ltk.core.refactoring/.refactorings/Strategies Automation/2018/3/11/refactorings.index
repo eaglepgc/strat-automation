@@ -1,0 +1,18 @@
+1520968144715	Delete element
+1520970534402	Rename type 'AddEnableDisableRemoveUserFlow'
+1520970559664	Rename type 'ManageUsers'
+1521051855659	Rename type 'NewTest'
+1521126231720	Rename resource 'paralel_strat_regression.xml'
+1521133110724	Rename type 'Open_Close_Browser_Chorme'
+1521134013943	Copy compilation unit
+1521134541606	Rename resource 'strat_regresion.xml'
+1521138983038	Rename resource 'parallel_strat_regression.xml'
+1521139762114	Rename resource 'chrome_parallel.xml'
+1521139780280	Rename resource 'chrome_refress.xml'
+1521139793500	Rename resource 'firefox_parallel.xml'
+1521139811358	Rename resource 'parallel_suites.xml'
+1521140133025	Delete element
+1521140479456	Delete element
+1521140948793	Infer generic type arguments
+1521140994882	Delete element
+1521141243896	Delete element

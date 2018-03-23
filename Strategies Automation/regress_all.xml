@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="parallel_suites">
+  <suite-files>
+    <suite-file path="firefox_parallel.xml" />
+    <suite-file path="chrome_parallel.xml" />
+  </suite-files>
+</suite>

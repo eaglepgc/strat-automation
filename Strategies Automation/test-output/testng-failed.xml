@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel Strat Regres]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Chrome test">
+    <classes>
+      <class name="strat_regresion_test.Login"/>
+      <class name="strat_regresion_test.Institution_Selector_Cobb"/>
+      <class name="strat_regresion_test.Envisioning"/>
+      <class name="strat_regresion_test.AddPurpose"/>
+      <class name="strat_regresion_test.AddMission"/>
+      <class name="strat_regresion_test.AddBeliefs"/>
+      <class name="strat_regresion_test.Add_New_Priorities"/>
+      <class name="strat_regresion_test.Edit_Priority"/>
+      <class name="strat_regresion_test.Delete_Priority"/>
+      <class name="strat_regresion_test.Work_Complete"/>
+      <class name="strat_regresion_test.Nav_Dashboard"/>
+      <class name="strat_regresion_test.Dashboard_regresion"/>
+      <class name="strat_regresion_test.Nav_ManageUsers"/>
+      <class name="strat_regresion_test.Add_User"/>
+      <class name="strat_regresion_test.Removing_User"/>
+      <class name="base.Logout"/>
+    </classes>
+  </test> <!-- Chrome test -->
+</suite> <!-- Failed suite [Parallel Strat Regres] -->

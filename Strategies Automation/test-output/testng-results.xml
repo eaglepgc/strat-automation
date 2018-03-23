@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel Strat Regres" duration-ms="164832" started-at="2018-03-22T19:09:15Z" finished-at="2018-03-22T19:12:00Z">
+    <groups>
+    </groups>
+    <test name="Chrome test" duration-ms="164832" started-at="2018-03-22T19:09:15Z" finished-at="2018-03-22T19:12:00Z">
+      <class name="strat_regresion_test.Add_New_Priorities">
+        <test-method status="PASS" signature="test()[pri:0, instance:strat_regresion_test.Add_New_Priorities@91161c7]" name="test" duration-ms="11642" started-at="2018-03-22T15:09:50Z" finished-at="2018-03-22T15:10:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Add_New_Priorities@91161c7]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:10:01Z" finished-at="2018-03-22T15:10:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Add_New_Priorities.test()[pri:0, instance:strat_regresion_test.Add_New_Priorities@91161c7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Add_New_Priorities -->
+      <class name="strat_regresion_test.Delete_Priority">
+        <test-method status="PASS" signature="test()[pri:0, instance:strat_regresion_test.Delete_Priority@6a4f787b]" name="test" duration-ms="3097" started-at="2018-03-22T15:10:13Z" finished-at="2018-03-22T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Delete_Priority@6a4f787b]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:10:16Z" finished-at="2018-03-22T15:10:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Delete_Priority.test()[pri:0, instance:strat_regresion_test.Delete_Priority@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Delete_Priority -->
+      <class name="strat_regresion_test.Institution_Selector_Cobb">
+        <test-method status="PASS" signature="institution_selector_cobb()[pri:0, instance:strat_regresion_test.Institution_Selector_Cobb@42d80b78]" name="institution_selector_cobb" duration-ms="2832" started-at="2018-03-22T15:09:22Z" finished-at="2018-03-22T15:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- institution_selector_cobb -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Institution_Selector_Cobb@42d80b78]" name="getResult" is-config="true" duration-ms="1" started-at="2018-03-22T15:09:25Z" finished-at="2018-03-22T15:09:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=institution_selector_cobb status=SUCCESS method=Institution_Selector_Cobb.institution_selector_cobb()[pri:0, instance:strat_regresion_test.Institution_Selector_Cobb@42d80b78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Institution_Selector_Cobb -->
+      <class name="strat_regresion_test.Add_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:strat_regresion_test.Add_User@6093dd95]" name="test" duration-ms="18985" started-at="2018-03-22T15:11:21Z" finished-at="2018-03-22T15:11:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Add_User@6093dd95]" name="getResult" is-config="true" duration-ms="1" started-at="2018-03-22T15:11:40Z" finished-at="2018-03-22T15:11:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Add_User.test()[pri:0, instance:strat_regresion_test.Add_User@6093dd95] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Add_User -->
+      <class name="strat_regresion_test.Envisioning">
+        <test-method status="PASS" signature="doubleClickOnStrat()[pri:0, instance:strat_regresion_test.Envisioning@3bfdc050]" name="doubleClickOnStrat" duration-ms="3304" started-at="2018-03-22T15:09:25Z" finished-at="2018-03-22T15:09:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doubleClickOnStrat -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Envisioning@3bfdc050]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:09:28Z" finished-at="2018-03-22T15:09:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doubleClickOnStrat status=SUCCESS method=Envisioning.doubleClickOnStrat()[pri:0, instance:strat_regresion_test.Envisioning@3bfdc050] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Envisioning -->
+      <class name="strat_regresion_test.AddPurpose">
+        <test-method status="PASS" signature="addPurpose()[pri:0, instance:strat_regresion_test.AddPurpose@1bce4f0a]" name="addPurpose" duration-ms="7307" started-at="2018-03-22T15:09:28Z" finished-at="2018-03-22T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPurpose -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.AddPurpose@1bce4f0a]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:09:35Z" finished-at="2018-03-22T15:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPurpose status=SUCCESS method=AddPurpose.addPurpose()[pri:0, instance:strat_regresion_test.AddPurpose@1bce4f0a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.AddPurpose -->
+      <class name="strat_regresion_test.Edit_Priority">
+        <test-method status="PASS" signature="test()[pri:0, instance:strat_regresion_test.Edit_Priority@604ed9f0]" name="test" duration-ms="11743" started-at="2018-03-22T15:10:01Z" finished-at="2018-03-22T15:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Edit_Priority@604ed9f0]" name="getResult" is-config="true" duration-ms="1" started-at="2018-03-22T15:10:13Z" finished-at="2018-03-22T15:10:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Edit_Priority.test()[pri:0, instance:strat_regresion_test.Edit_Priority@604ed9f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Edit_Priority -->
+      <class name="strat_regresion_test.Dashboard_regresion">
+        <test-method status="PASS" signature="NewStrategy()[pri:0, instance:strat_regresion_test.Dashboard_regresion@7cd62f43]" name="NewStrategy" duration-ms="55591" started-at="2018-03-22T15:10:21Z" finished-at="2018-03-22T15:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewStrategy -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Dashboard_regresion@7cd62f43]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:11:16Z" finished-at="2018-03-22T15:11:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NewStrategy status=SUCCESS method=Dashboard_regresion.NewStrategy()[pri:0, instance:strat_regresion_test.Dashboard_regresion@7cd62f43] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Dashboard_regresion -->
+      <class name="strat_regresion_test.Removing_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:strat_regresion_test.Removing_User@5622fdf]" name="test" duration-ms="18371" started-at="2018-03-22T15:11:40Z" finished-at="2018-03-22T15:11:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Removing_User@5622fdf]" name="getResult" is-config="true" duration-ms="1" started-at="2018-03-22T15:11:58Z" finished-at="2018-03-22T15:11:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Removing_User.test()[pri:0, instance:strat_regresion_test.Removing_User@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Removing_User -->
+      <class name="strat_regresion_test.Nav_ManageUsers">
+        <test-method status="PASS" signature="manageusers()[pri:0, instance:strat_regresion_test.Nav_ManageUsers@6d4b1c02]" name="manageusers" duration-ms="4307" started-at="2018-03-22T15:11:16Z" finished-at="2018-03-22T15:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageusers -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Nav_ManageUsers@6d4b1c02]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:11:21Z" finished-at="2018-03-22T15:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manageusers status=SUCCESS method=Nav_ManageUsers.manageusers()[pri:0, instance:strat_regresion_test.Nav_ManageUsers@6d4b1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Nav_ManageUsers -->
+      <class name="strat_regresion_test.Work_Complete">
+        <test-method status="PASS" signature="test()[pri:0, instance:strat_regresion_test.Work_Complete@685cb137]" name="test" duration-ms="183" started-at="2018-03-22T15:10:16Z" finished-at="2018-03-22T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Work_Complete@685cb137]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:10:16Z" finished-at="2018-03-22T15:10:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Work_Complete.test()[pri:0, instance:strat_regresion_test.Work_Complete@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Work_Complete -->
+      <class name="base.Logout">
+        <test-method status="PASS" signature="test()[pri:0, instance:base.Logout@4883b407]" name="test" duration-ms="2296" started-at="2018-03-22T15:11:58Z" finished-at="2018-03-22T15:12:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:base.Logout@4883b407]" name="getResult" is-config="true" duration-ms="2" started-at="2018-03-22T15:12:00Z" finished-at="2018-03-22T15:12:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=Logout.test()[pri:0, instance:base.Logout@4883b407] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- base.Logout -->
+      <class name="strat_regresion_test.AddBeliefs">
+        <test-method status="PASS" signature="addPurpose()[pri:0, instance:strat_regresion_test.AddBeliefs@5c3bd550]" name="addPurpose" duration-ms="7244" started-at="2018-03-22T15:09:43Z" finished-at="2018-03-22T15:09:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPurpose -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.AddBeliefs@5c3bd550]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:09:50Z" finished-at="2018-03-22T15:09:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPurpose status=SUCCESS method=AddBeliefs.addPurpose()[pri:0, instance:strat_regresion_test.AddBeliefs@5c3bd550] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.AddBeliefs -->
+      <class name="strat_regresion_test.Nav_Dashboard">
+        <test-method status="PASS" signature="mystrategies()[pri:0, instance:strat_regresion_test.Nav_Dashboard@6a41eaa2]" name="mystrategies" duration-ms="4164" started-at="2018-03-22T15:10:16Z" finished-at="2018-03-22T15:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mystrategies -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Nav_Dashboard@6a41eaa2]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:10:21Z" finished-at="2018-03-22T15:10:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mystrategies status=SUCCESS method=Nav_Dashboard.mystrategies()[pri:0, instance:strat_regresion_test.Nav_Dashboard@6a41eaa2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.Nav_Dashboard -->
+      <class name="strat_regresion_test.Login">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:strat_regresion_test.Login@1e88b3c]" name="setUp" is-config="true" duration-ms="4578" started-at="2018-03-22T15:09:11Z" finished-at="2018-03-22T15:09:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startReport()[pri:0, instance:strat_regresion_test.Login@1e88b3c]" name="startReport" is-config="true" duration-ms="111" started-at="2018-03-22T15:09:15Z" finished-at="2018-03-22T15:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="login()[pri:0, instance:strat_regresion_test.Login@1e88b3c]" name="login" duration-ms="6468" started-at="2018-03-22T15:09:15Z" finished-at="2018-03-22T15:09:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.Login@1e88b3c]" name="getResult" is-config="true" duration-ms="8" started-at="2018-03-22T15:09:22Z" finished-at="2018-03-22T15:09:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Login.login()[pri:0, instance:strat_regresion_test.Login@1e88b3c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:strat_regresion_test.Login@1e88b3c]" name="endReport" is-config="true" duration-ms="960" started-at="2018-03-22T15:12:00Z" finished-at="2018-03-22T15:12:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- strat_regresion_test.Login -->
+      <class name="strat_regresion_test.AddMission">
+        <test-method status="PASS" signature="addPurpose()[pri:0, instance:strat_regresion_test.AddMission@5e3a8624]" name="addPurpose" duration-ms="7251" started-at="2018-03-22T15:09:35Z" finished-at="2018-03-22T15:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPurpose -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:strat_regresion_test.AddMission@5e3a8624]" name="getResult" is-config="true" duration-ms="0" started-at="2018-03-22T15:09:43Z" finished-at="2018-03-22T15:09:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPurpose status=SUCCESS method=AddMission.addPurpose()[pri:0, instance:strat_regresion_test.AddMission@5e3a8624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- strat_regresion_test.AddMission -->
+    </test> <!-- Chrome test -->
+  </suite> <!-- Parallel Strat Regres -->
+</testng-results>

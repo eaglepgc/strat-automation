@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Strat Regres" parallel="tests" thread-count="2">
+	<parameter name="browser" value="firefox"></parameter>
+	<test name="FireFox test" preserve-order="true">
+	
+		<classes>
+			<!-- <class name="base.Open_Close_Browser_Chorme"></class> -->
+			<class name="strat_regresion_test.RequestPassword"></class>
+			<!-- <class name="strat_regresion_test.Login"></class>
+			<class name="strat_regresion_test.Institution_Selector_Cobb"></class>
+			<class name="strat_regresion_test.Dashboard_regresion"></class>
+			<class name="strat_regresion_test.Nav_ManageUsers"></class>
+			<class name="strat_regresion_test.AddEditEnableDisableRemoveUserFlow"></class>
+			<class name="base.Logout"></class> -->
+		</classes>
+	</test>
+	<test name="Chrome test" preserve-order="true">
+	
+		<classes>
+			<!-- <class name="base.Open_Close_Browser_Chorme"></class> -->
+			<class name="strat_regresion_test.RequestPassword"></class>
+			<!-- <class name="strat_regresion_test.Login"></class>
+			<class name="strat_regresion_test.Institution_Selector_Cobb"></class>
+			<class name="strat_regresion_test.Dashboard_regresion"></class>
+			<class name="strat_regresion_test.Nav_ManageUsers"></class>
+			<class name="strat_regresion_test.AddEditEnableDisableRemoveUserFlow"></class>
+			<class name="base.Logout"></class> -->
+		</classes>
+	</test>
+</suite>

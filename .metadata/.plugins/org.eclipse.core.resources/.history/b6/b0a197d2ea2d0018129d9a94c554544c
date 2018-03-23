@@ -1,0 +1,9 @@
+package strat_regresion_test;
+
+import org.testng.annotations.Test;
+
+public class AddMission {
+  @Test
+  public void f() {
+  }
+}

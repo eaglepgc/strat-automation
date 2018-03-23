@@ -1,0 +1,14 @@
+package strat_regresion_test;
+
+import org.testng.annotations.Test;
+
+import base.Before_and_After_Suite;
+
+public class AddEditEnableDisableRemoveUserFlow extends Before_and_After_Suite{
+	  
+	  @Test //Testing users
+	  public void test() throws InterruptedException { 
+		  
+			test=extent.createTest("Add/Edit/Enable/Remove User");
+			
+}

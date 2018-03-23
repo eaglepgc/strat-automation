@@ -1,0 +1,45 @@
+package base;
+
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
+
+public class Before_and_After_Suite {
+	public static 
+	 
+	WebDriver driver;
+	String baseURL;
+	
+	@BeforeSuite
+	@Parameters ("browser")
+	
+	public void setUp(String browser) {
+		// This selects the Chrome Driver and opens it//
+		// must use your driver's location//
+		baseURL= "http://devstrategies.advanc-ed.org:8113/";
+		if (browser.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver", "c:/Java_Drivers_Selenium/chromedriver.exe");
+			driver = new ChromeDriver();
+		
+		} else if (browser.equalsIgnoreCase("firefox")){
+			System.setProperty("webdriver.gecko.driver", "c:/Java_Drivers_Selenium/geckodriver.exe");
+			driver = new FirefoxDriver();
+	
+
+		}
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+		driver.get(baseURL);
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		driver.quit();
+	}
+
+}

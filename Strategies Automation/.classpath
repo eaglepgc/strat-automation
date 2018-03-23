@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/smjones/Downloads/selenium-server-standalone-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/extentreports-3.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java Jars/extentreports-java-3.0.6/lib/testng-6.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/smjones/Downloads/jcommander-1.72.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/api/javax.ws.rs-api-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/aopalliance-repackaged-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/hk2-api-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/hk2-locator-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/hk2-utils-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/javax.annotation-api-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/javax.inject-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/jaxb-api-2.2.7.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/jersey-guava-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/org.osgi.core-4.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/osgi-resource-locator-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/persistence-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/ext/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/lib/jersey-client.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/lib/jersey-common.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/lib/jersey-container-servlet.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/lib/jersey-container-servlet-core.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/lib/jersey-media-jaxb.jar"/>
+	<classpathentry kind="lib" path="C:/jaxrs-ri/lib/jersey-server.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

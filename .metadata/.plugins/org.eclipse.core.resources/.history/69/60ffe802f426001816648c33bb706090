@@ -1,0 +1,20 @@
+package strat_regresion_test;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import base.Open_Close_Browser_Chorme;
+
+
+public class Institution_Selector_Cobb extends Open_Close_Browser_Chorme {
+	
+  @Test(dependsOnMethods = {"Login"})
+  public void test() throws InterruptedException {
+	  
+	  driver.findElement(By.className("ng-untouched")).sendKeys("Cobb County School District");
+	  driver.findElement(By.className("pointer")).click();
+	  Thread.sleep(2000); // Let the user actually see something!
+	  Assert.assertEquals(driver.getTitle(), "eProve™ strategies"); // confirms it is ont the correct page by verifying the title
+		
+  }
+}

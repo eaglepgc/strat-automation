@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Strat Regres" parallel="none">
+	<test name="Login" preserve-order="true">
+		<classes>
+			<class name="strat_regresion_test.Login"></class>
+			<class name="strat_regresion_test.Institution_Selector_Cobb"></class>
+			<class name="strat_regresion_test.Dashboard_regresion"></class>
+			<class name="strat_regresion_test.ManageUsers"></class>
+			<class name="strat_regresion_test.AddEnableDisableRemoveUserFlow"></class>
+			<class name="base.Logout"></class>
+		</classes>
+
+	</test>
+</suite>

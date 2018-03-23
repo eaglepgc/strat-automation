@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > 
+<suite name="DevDataFile"> 
+  <test name="test">
+  <parameter name="ChromeDevURL" value="http://devstrategies.advanc-ed.org:8113/login"/>
+  <parameter name="FFDevURL" value="val2"/>
+    <classes>
+      <class name="test.TestClass1" />
+    </classes>
+  </test> 
+</suite>

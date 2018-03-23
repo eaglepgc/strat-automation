@@ -1,0 +1,13 @@
+package strat_regresion_test;
+
+import org.testng.annotations.Test;
+
+import base.Open_Close_Browser_Chorme;
+
+public class Dashboard_regresion extends Open_Close_Browser_Chorme{
+	
+  @Test
+  public void test() throws InterruptedException {
+	  //New Strategy
+  }
+}

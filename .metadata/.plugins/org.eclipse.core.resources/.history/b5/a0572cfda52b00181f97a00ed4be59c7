@@ -1,0 +1,57 @@
+package strat_regresion_test;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import base.Before_and_After_Suite;
+
+public class Login extends Before_and_After_Suite {
+	ExtentHtmlReporter htmlReporter;
+	ExtentReports extent;
+	ExtentTest test;
+	
+
+	@Test //(dataProvider="UserNamePassword", dataProviderClass=Urls.class)
+	public void login() throws InterruptedException {
+		test = extent.createTest("login","Login");
+
+		Thread.sleep(2000); // Let the user actually see something!
+		driver.findElement(By.name("email")).clear(); // clears text
+		driver.findElement(By.name("email")).sendKeys("stephen.jones@soltech.net");
+		driver.findElement(By.name("password")).clear();
+		driver.findElement(By.name("password")).sendKeys("Password1!");
+		Thread.sleep(2000); // Let the user actually see something!
+		driver.findElement(By.className("auth-btn")).click();
+		Thread.sleep(2000); // Let the user actually see something!
+		Assert.assertEquals(driver.getTitle(), "eProve™ strategies"); // confirms it is on the correct page  by verifying the title
+	}
+	
+	/*@AfterMethod
+	  public void getResult(ITestResult result){
+		  if(result.getStatus() == ITestResult.FAILURE){
+			
+			  test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed for the below reason(s)", ExtentColor.RED));
+			  test.fail(result.getThrowable());
+			  }
+		  else if(result.getStatus() == ITestResult.SUCCESS)
+		  {
+			  test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - Test Case PASSED", ExtentColor.GREEN)); 
+			  }
+		  else 
+		  {
+			  test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case SKIPPED", ExtentColor.YELLOW));
+			  test.skip(result.getThrowable());
+		  }
+	  }*/
+
+}

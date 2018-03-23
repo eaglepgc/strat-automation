@@ -1,0 +1,23 @@
+package strat_regresion_test;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import base.Before_and_After_Suite;
+
+public class Envisioning extends Before_and_After_Suite{
+	
+	
+  @Test 
+
+  public void test() throws InterruptedException { 
+	  
+		test=extent.createTest("Add/Edit/Enable/Remove User");
+		
+		//Double Clicking on DO NOT DELETE - AUTOMATION Strat
+		driver.findElement(By.xpath("//div[contains(text(),'DO NOT DELETE - AUTOMATION')]")).click();
+		driver.findElement(By.xpath("//div[contains(text(),'DO NOT DELETE - AUTOMATION')]")).click();
+		
+
+  }
+}

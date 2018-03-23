@@ -1,0 +1,24 @@
+package strat_regresion_test;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.Open_Close_Browser_Chorme;
+
+public class Dashboard_regresion extends Open_Close_Browser_Chorme{
+	
+  @Test
+  public void test() throws InterruptedException {
+	  //New Strategy
+	  //Click "New Strategy" button
+	  driver.findElement(By.xpath("//html/body/app-root/app-strategies/app-dashboard/div/div/div/button")).click();
+	  //Type new strategy Name
+	  driver.findElement(By.id("strategyName")).sendKeys("1A Automation Strat");
+	  //Select Dates
+	  driver.findElement(By.xpath("/html/body/div[3]/app-strategy-details/form/div[2]/div/p-calendar[1]/span/input")).sendKeys("05/05/2020");
+	  driver.findElement(By.xpath("/html/body/div[3]/app-strategy-details/form/div[2]/div/p-calendar[2]/span/input")).sendKeys("10/10/2020");
+	  driver.findElement(By.xpath("/html/body/div[3]/app-strategy-details/form/div[3]/button[2]")).click();
+	  Assert.assertTrue(driver.getPageSource().contains("1A Automation Strat"));
+  }
+}

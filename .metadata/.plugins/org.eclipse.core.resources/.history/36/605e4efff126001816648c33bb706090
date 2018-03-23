@@ -1,0 +1,5 @@
+package strat_regresion_test;
+
+public @interface FixMethodOrder {
+
+}

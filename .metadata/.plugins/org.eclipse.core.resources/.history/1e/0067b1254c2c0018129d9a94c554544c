@@ -1,0 +1,31 @@
+package strat_regresion_test;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.Before_and_After_Suite;
+
+public class RequestPassword extends Before_and_After_Suite
+{
+
+	@Test
+	public void requestPassword() throws InterruptedException 
+	{ 
+	  
+	  //Click Request Password
+	  //test=extent.createTest("requestPassword");
+	  
+	  Thread.sleep(5000); // Let the user actually see something!
+	  driver.findElement(By.linkText("Request Password")).click();
+	  Thread.sleep(2000); // Let the user actually see something!
+	  driver.findElement(By.name("email")).sendKeys("strat-change-PW@yopmail.com");
+	  driver.findElement(By.className("auth-btn")).click();
+	  Thread.sleep(10000); // Let the user actually see something!
+	  Assert.assertTrue(driver.getPageSource().contains("Didn't receive an email?"));
+	  driver.get("http://devstrategies.advanc-ed.org:8113/");
+	  
+
+  }
+  
+ }

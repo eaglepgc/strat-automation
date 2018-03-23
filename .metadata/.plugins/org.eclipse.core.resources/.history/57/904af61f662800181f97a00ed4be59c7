@@ -1,0 +1,28 @@
+package base;
+
+import org.testng.annotations.BeforeSuite;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
+
+public class Open_Close_Browser_Chorme {
+	public static WebDriver driver;
+
+	@BeforeSuite
+	public void beforeSuite() throws InterruptedException {
+		// This selects the Chrome Driver and opens it//
+		System.setProperty("webdriver.chrome.driver", "c:/Java_Drivers_Selenium/chromedriver.exe");
+		// must use your driver's location//
+		driver = new ChromeDriver();
+		driver.get("http://devstrategies.advanc-ed.org:8113/");
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+		Thread.sleep(2000); // Let the user actually see something!
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		driver.quit();
+	}
+
+}
