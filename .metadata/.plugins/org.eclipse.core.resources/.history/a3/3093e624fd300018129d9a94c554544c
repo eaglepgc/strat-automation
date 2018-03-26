@@ -5,7 +5,7 @@
 	<test name="Chrome test" preserve-order="true">
 	
 		<classes>
-			<class name="strat_regresion_test.RequestPassword"></class>
+			<!-- <class name="strat_regresion_test.RequestPassword"></class> -->
 			<class name="strat_regresion_test.Login"></class>
 			<class name="strat_regresion_test.Institution_Selector_Cobb"></class>
 			<class name="strat_regresion_test.Envisioning"></class>

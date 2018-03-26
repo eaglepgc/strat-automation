@@ -4,6 +4,7 @@
   <parameter name="browser" value="chrome"/>
   <test name="Chrome test">
     <classes>
+      <class name="strat_regresion_test.RequestPassword"/>
       <class name="strat_regresion_test.Login"/>
       <class name="strat_regresion_test.Institution_Selector_Cobb"/>
       <class name="strat_regresion_test.Envisioning"/>

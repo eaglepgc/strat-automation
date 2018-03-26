@@ -14,7 +14,7 @@ public class Edit_Priority extends Before_and_After_Suite{
 		  test=extent.createTest("Edit_Priority");
 		  
 		  //Clicking the Edit icon
-		  driver.findElement(By.xpath("/html/body/app-root/app-plan/div/div[2]/app-envisioning/section/p-datatable/div/div[1]/table/tbody/tr/td[3]/span/button[1]")).click();
+		  driver.findElement(By.xpath("/html/body/app-root/app-plan/div/div[2]/app-envisioning/section/p-datatable/div/div[1]/table/tbody/tr/td[3]/span/i[1]")).click();
 		  Thread.sleep(1000); // Let the user actually see something!
 		  //Entering a Description
 		  driver.findElement(By.id("priorityDescription")).clear();
