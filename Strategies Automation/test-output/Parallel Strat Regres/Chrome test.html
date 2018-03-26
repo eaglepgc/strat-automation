@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Chrome test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 26 10:02:48 EDT 2018</td>
+<td>Started on:</td><td>Mon Mar 26 12:02:11 EDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>183 seconds (183036 ms)</td>
+<tr><td>Total time:</td><td>182 seconds (182996 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,54 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='strat_regresion_test.Nav_ManageUsers.manageusers()'><b>manageusers</b><br>Test class: strat_regresion_test.Nav_ManageUsers</td>
+<td><div><pre>java.lang.AssertionError: expected [blah™ strategies] but found [eProve™ strategies]
+	at strat_regresion_test.Nav_ManageUsers.manageusers(Nav_ManageUsers.java:20)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2045220442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2045220442'><pre>java.lang.AssertionError: expected [blah™ strategies] but found [eProve™ strategies]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at strat_regresion_test.Nav_ManageUsers.manageusers(Nav_ManageUsers.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>4</td>
+<td>strat_regresion_test.Nav_ManageUsers@5622fdf</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -80,25 +128,45 @@ function toggleAllBoxes() {
 <td>55</td>
 <td>strat_regresion_test.Dashboard_regresion@6093dd95</td></tr>
 <tr>
+<td title='strat_regresion_test.AddBeliefs.addBeliefs()'><b>addBeliefs</b><br>Test class: strat_regresion_test.AddBeliefs</td>
+<td></td>
+<td>7</td>
+<td>strat_regresion_test.AddBeliefs@604ed9f0</td></tr>
+<tr>
+<td title='strat_regresion_test.AddMission.addMission()'><b>addMission</b><br>Test class: strat_regresion_test.AddMission</td>
+<td></td>
+<td>7</td>
+<td>strat_regresion_test.AddMission@91161c7</td></tr>
+<tr>
+<td title='strat_regresion_test.Add_New_Priorities.addNewPriority()'><b>addNewPriority</b><br>Test class: strat_regresion_test.Add_New_Priorities</td>
+<td></td>
+<td>11</td>
+<td>strat_regresion_test.Add_New_Priorities@6a4f787b</td></tr>
+<tr>
 <td title='strat_regresion_test.AddPurpose.addPurpose()'><b>addPurpose</b><br>Test class: strat_regresion_test.AddPurpose</td>
 <td></td>
 <td>7</td>
 <td>strat_regresion_test.AddPurpose@5c3bd550</td></tr>
 <tr>
-<td title='strat_regresion_test.AddMission.addPurpose()'><b>addPurpose</b><br>Test class: strat_regresion_test.AddMission</td>
+<td title='strat_regresion_test.Add_User.addUser()'><b>addUser</b><br>Test class: strat_regresion_test.Add_User</td>
 <td></td>
-<td>7</td>
-<td>strat_regresion_test.AddMission@91161c7</td></tr>
+<td>19</td>
+<td>strat_regresion_test.Add_User@4883b407</td></tr>
 <tr>
-<td title='strat_regresion_test.AddBeliefs.addPurpose()'><b>addPurpose</b><br>Test class: strat_regresion_test.AddBeliefs</td>
+<td title='strat_regresion_test.Delete_Priority.deletePriority()'><b>deletePriority</b><br>Test class: strat_regresion_test.Delete_Priority</td>
 <td></td>
-<td>7</td>
-<td>strat_regresion_test.AddBeliefs@604ed9f0</td></tr>
+<td>3</td>
+<td>strat_regresion_test.Delete_Priority@6a41eaa2</td></tr>
 <tr>
 <td title='strat_regresion_test.Envisioning.doubleClickOnStrat()'><b>doubleClickOnStrat</b><br>Test class: strat_regresion_test.Envisioning</td>
 <td></td>
 <td>3</td>
 <td>strat_regresion_test.Envisioning@5e3a8624</td></tr>
+<tr>
+<td title='strat_regresion_test.Edit_Priority.editPriority()'><b>editPriority</b><br>Test class: strat_regresion_test.Edit_Priority</td>
+<td></td>
+<td>11</td>
+<td>strat_regresion_test.Edit_Priority@685cb137</td></tr>
 <tr>
 <td title='strat_regresion_test.Institution_Selector_Cobb.institution_selector_cobb()'><b>institution_selector_cobb</b><br>Test class: strat_regresion_test.Institution_Selector_Cobb</td>
 <td></td>
@@ -110,55 +178,30 @@ function toggleAllBoxes() {
 <td>6</td>
 <td>strat_regresion_test.Login@3bfdc050</td></tr>
 <tr>
-<td title='strat_regresion_test.Nav_ManageUsers.manageusers()'><b>manageusers</b><br>Test class: strat_regresion_test.Nav_ManageUsers</td>
-<td></td>
-<td>4</td>
-<td>strat_regresion_test.Nav_ManageUsers@5622fdf</td></tr>
-<tr>
-<td title='strat_regresion_test.Nav_Dashboard.mystrategies()'><b>mystrategies</b><br>Test class: strat_regresion_test.Nav_Dashboard</td>
+<td title='strat_regresion_test.Nav_Dashboard.navDashboard()'><b>navDashboard</b><br>Test class: strat_regresion_test.Nav_Dashboard</td>
 <td></td>
 <td>4</td>
 <td>strat_regresion_test.Nav_Dashboard@6d4b1c02</td></tr>
+<tr>
+<td title='strat_regresion_test.Removing_User.removingUser()'><b>removingUser</b><br>Test class: strat_regresion_test.Removing_User</td>
+<td></td>
+<td>18</td>
+<td>strat_regresion_test.Removing_User@7d9d1a19</td></tr>
 <tr>
 <td title='strat_regresion_test.RequestPassword.requestPassword()'><b>requestPassword</b><br>Test class: strat_regresion_test.RequestPassword</td>
 <td></td>
 <td>17</td>
 <td>strat_regresion_test.RequestPassword@42d80b78</td></tr>
 <tr>
-<td title='strat_regresion_test.Add_New_Priorities.test()'><b>test</b><br>Test class: strat_regresion_test.Add_New_Priorities</td>
-<td></td>
-<td>11</td>
-<td>strat_regresion_test.Add_New_Priorities@6a4f787b</td></tr>
-<tr>
-<td title='strat_regresion_test.Edit_Priority.test()'><b>test</b><br>Test class: strat_regresion_test.Edit_Priority</td>
-<td></td>
-<td>11</td>
-<td>strat_regresion_test.Edit_Priority@685cb137</td></tr>
-<tr>
-<td title='strat_regresion_test.Delete_Priority.test()'><b>test</b><br>Test class: strat_regresion_test.Delete_Priority</td>
-<td></td>
-<td>3</td>
-<td>strat_regresion_test.Delete_Priority@6a41eaa2</td></tr>
-<tr>
-<td title='strat_regresion_test.Work_Complete.test()'><b>test</b><br>Test class: strat_regresion_test.Work_Complete</td>
-<td></td>
-<td>0</td>
-<td>strat_regresion_test.Work_Complete@7cd62f43</td></tr>
-<tr>
-<td title='strat_regresion_test.Add_User.test()'><b>test</b><br>Test class: strat_regresion_test.Add_User</td>
-<td></td>
-<td>19</td>
-<td>strat_regresion_test.Add_User@4883b407</td></tr>
-<tr>
-<td title='strat_regresion_test.Removing_User.test()'><b>test</b><br>Test class: strat_regresion_test.Removing_User</td>
-<td></td>
-<td>18</td>
-<td>strat_regresion_test.Removing_User@7d9d1a19</td></tr>
-<tr>
 <td title='base.Logout.test()'><b>test</b><br>Test class: base.Logout</td>
 <td></td>
 <td>2</td>
 <td>base.Logout@39c0f4a</td></tr>
+<tr>
+<td title='strat_regresion_test.Work_Complete.workComplete()'><b>workComplete</b><br>Test class: strat_regresion_test.Work_Complete</td>
+<td></td>
+<td>0</td>
+<td>strat_regresion_test.Work_Complete@7cd62f43</td></tr>
 </table><p>
 </body>
 </html>

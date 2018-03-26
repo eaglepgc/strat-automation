@@ -15,7 +15,7 @@ public class RequestPassword extends Before_and_After_Suite
 	@Test
 	public void requestPassword() throws InterruptedException 
 	{ 
-		test=extent.createTest("Request Password");
+		test=extent.createTest("requestPassword");
 	  //Click Request Password
 	  
 	  Thread.sleep(5000); // Let the user actually see something!

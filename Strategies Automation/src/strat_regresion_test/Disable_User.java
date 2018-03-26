@@ -10,9 +10,9 @@ import base.Before_and_After_Suite;
 public class Disable_User extends Before_and_After_Suite{
 	  
 	  @Test //Disable user
-	  public void test() throws InterruptedException { 
+	  public void disableUser() throws InterruptedException { 
 		  
-			test=extent.createTest("Disable user");
+			test=extent.createTest("disableUser");
 			
 			  //Clicking Action Menu 
 			  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[5]/span/div/i")).click();

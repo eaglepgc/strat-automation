@@ -9,9 +9,9 @@ import base.Before_and_After_Suite;
 public class Nav_Dashboard extends Before_and_After_Suite {
 	  
 	@Test //Navigating to Strategies Dashboard Page
-	  public void mystrategies() throws InterruptedException {
+	  public void navDashboard() throws InterruptedException {
 		  
-			test=extent.createTest("Navigating to My Strategies");
+			test=extent.createTest("navDashboard");
 
 		  //Clicking Hamburger Menu
 		  driver.findElement(By.className("icon-menu")).click();

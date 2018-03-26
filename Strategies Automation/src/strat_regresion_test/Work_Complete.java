@@ -8,9 +8,9 @@ import base.Before_and_After_Suite;
 public class Work_Complete extends Before_and_After_Suite{
 	  
 	  @Test //Add user
-	  public void test() throws InterruptedException { 
+	  public void workComplete() throws InterruptedException { 
 		  
-			test=extent.createTest("Add user");
+			test=extent.createTest("workComplete");
 			
 			//Click on the "Is your work completed?" button
 			driver.findElement(By.className("ui-inputswitch-off")).click();

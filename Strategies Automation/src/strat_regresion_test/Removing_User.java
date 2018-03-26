@@ -9,9 +9,9 @@ import base.Before_and_After_Suite;
 public class Removing_User extends Before_and_After_Suite{
 	  
 	  @Test //Remove user
-	  public void test() throws InterruptedException { 
+	  public void removingUser() throws InterruptedException { 
 		  
-			test=extent.createTest("Remove user");
+			test=extent.createTest("removingUser");
 			//Clicking Action Menu 
 			  driver.findElement(By.xpath("/html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[1]/td[5]/span/div/i")).click();
 			  Thread.sleep(3000); // Let the user actually see something!

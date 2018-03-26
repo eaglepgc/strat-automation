@@ -13,9 +13,9 @@ public class AddMission extends Before_and_After_Suite
 	
 	  @Test
 	  
-	  public void addPurpose() throws InterruptedException { 
+	  public void addMission() throws InterruptedException { 
 		  
-			test=extent.createTest("add Mission");
+			test=extent.createTest("addMission");
 			
 			//Enter text into AddPurpose
 			driver.findElement(By.xpath("/html/body/app-root/app-plan/div/div[2]/app-envisioning/section/ul/li[2]/app-rich-content/div[2]/div[3]/div[2]")).clear();

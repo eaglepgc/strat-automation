@@ -9,9 +9,9 @@ import base.Before_and_After_Suite;
 public class Delete_Priority extends Before_and_After_Suite{
 	  
 	  @Test //Add New Priority
-	  public void test() throws InterruptedException { 
+	  public void deletePriority() throws InterruptedException { 
 		  
-		  test=extent.createTest("Delete_Priority");
+		  test=extent.createTest("deletePriority");
 		  
 		  //Clicking the Delete icon
 		  driver.findElement(By.xpath("/html/body/app-root/app-plan/div/div[2]/app-envisioning/section/p-datatable/div/div[1]/table/tbody/tr/td[3]/span/button[2]")).click();

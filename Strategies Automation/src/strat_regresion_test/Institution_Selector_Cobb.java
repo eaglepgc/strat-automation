@@ -11,7 +11,7 @@ public class Institution_Selector_Cobb extends Before_and_After_Suite {
   @Test
   public void institution_selector_cobb() throws InterruptedException {
 	  
-		test=extent.createTest("Inst Selector");
+		test=extent.createTest("institution_selector_cobb");
 
 	  driver.findElement(By.className("ng-untouched")).sendKeys("Cobb County School District");
 	  driver.findElement(By.className("pointer")).click();

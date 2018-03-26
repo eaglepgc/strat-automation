@@ -11,9 +11,9 @@ import base.Before_and_After_Suite;
 public class Add_User extends Before_and_After_Suite{
   
   @Test //Add user
-  public void test() throws InterruptedException { 
+  public void addUser() throws InterruptedException { 
 	  
-		test=extent.createTest("Add user");
+		test=extent.createTest("addUser");
 
 	  //Adding a user
 	  driver.findElement(By.xpath("/html/body/app-root/app-usermgmt/div/div/div/button")).click();

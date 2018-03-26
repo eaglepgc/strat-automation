@@ -1,0 +1,34 @@
+package strat_regresion_test;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.Before_and_After_Suite;
+
+public class Edit_Priority extends Before_and_After_Suite{
+	  
+	  @Test //Add New Priority
+	  public void test() throws InterruptedException { 
+		  
+		  test=extent.createTest("Edit_Priority");
+		  
+		  //Clicking the Edit icon
+		  driver.findElement(By.xpath("/html/body/app-root/app-plan/div/div[2]/app-envisioning/section/p-datatable/div/div[1]/table/tbody/tr/td[3]/span/button[1]")).click();
+		  Thread.sleep(1000); // Let the user actually see something!
+		  //Entering a Description
+		  driver.findElement(By.id("priorityDescription")).clear();
+		  driver.findElement(By.id("priorityDescription")).sendKeys("This is an Edited Priority Description");
+		  //SELECT TAG NOT IMPLEMENTED 
+		  //Entering Title
+		  driver.findElement(By.id("priorityTitle")).clear();
+		  driver.findElement(By.id("priorityTitle")).sendKeys("Auto Edited Priority uniuqe awofwwoafn");
+		  //Clicking Save button
+		  driver.findElement(By.xpath("/html/body/div[3]/app-priority/form/div[4]/button[2]")).click();
+		  Thread.sleep(10000); // Let the user actually see something!
+		  //Verifying New Priority was edited
+		  Assert.assertTrue(driver.getPageSource().contains("Auto Edited Priority"));
+		  
+		  
+	  }
+}

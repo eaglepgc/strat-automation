@@ -11,7 +11,7 @@ public class Dashboard_regresion extends Before_and_After_Suite{
 	
   @Test
   public void NewStrategy() throws InterruptedException {
-		test=extent.createTest("Strategy Dashboard New Strat, Edit Strat, Delete Strat");
+		test=extent.createTest("NewStrategy");
 				
 	  //New Strategy
 	  //Click "New Strategy" button

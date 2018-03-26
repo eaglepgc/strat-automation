@@ -10,9 +10,10 @@ import base.Before_and_After_Suite;
 public class  Add_New_Priorities extends Before_and_After_Suite{
 	  
 	  @Test //Add New Priority
-	  public void test() throws InterruptedException { 
+	  public void addNewPriority() throws InterruptedException { 
 		  
-		  test=extent.createTest("Add New Priority");
+		  test=extent.createTest("addNewPriority");
+		  
 		  //Scroll to bottom of page
 		  JavascriptExecutor js = (JavascriptExecutor) driver;
 		  js.executeScript("window.scrollBy(0,document.body.scrollHeight)");

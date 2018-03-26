@@ -15,7 +15,7 @@ public class AddPurpose extends Before_and_After_Suite
   
   public void addPurpose() throws InterruptedException { 
 	  
-		test=extent.createTest("add Purpose");
+		test=extent.createTest("addPurpose");
 		
 		//Enter text into AddPurpose
 		driver.findElement(By.xpath("/html/body/app-root/app-plan/div/div[2]/app-envisioning/section/ul/li[1]/app-rich-content/div[2]/div[3]/div[2]")).clear();

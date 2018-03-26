@@ -1,6 +1,7 @@
 package base;
 
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -60,13 +61,14 @@ public class Before_and_After_Suite {
 		
 	}
 	@AfterMethod
-	  public void getResult(ITestResult result)
+	  public void getResult(ITestResult result) throws IOException
 	{
 		  if(result.getStatus() == ITestResult.FAILURE)
 		  {
-			
+			  String screenshotPath = GetScreenShot.capture(driver, "screenshotName");			
 			  test.fail(MarkupHelper.createLabel(result.getName()+ " - Test Case Failed for the below reason(s)", ExtentColor.RED));
 			  test.fail(result.getThrowable());
+			  test.fail("Snapshot below: "+ test.addScreenCaptureFromPath(screenshotPath));
 			  }
 		  else if(result.getStatus() == ITestResult.SUCCESS)
 		  {

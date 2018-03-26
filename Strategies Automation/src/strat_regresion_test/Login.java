@@ -12,7 +12,7 @@ public class Login extends Before_and_After_Suite {
 	
 	@Test //(dataProvider="UserNamePassword", dataProviderClass=Urls.class)
 	public void login() throws InterruptedException {
-		test=extent.createTest("Login as Admin");
+		test=extent.createTest("login");
 
 		Thread.sleep(2000); // Let the user actually see something!
 		driver.findElement(By.name("email")).clear(); // clears text

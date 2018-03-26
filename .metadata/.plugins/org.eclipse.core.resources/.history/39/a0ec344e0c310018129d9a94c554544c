@@ -1,0 +1,31 @@
+package strat_regresion_test;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import base.Before_and_After_Suite;
+
+public class Disable_User extends Before_and_After_Suite{
+	  
+	  @Test //Disable user
+	  public void disableUser() throws InterruptedException { 
+		  
+			test=extent.createTest("Disable user");
+			
+			  //Clicking Action Menu 
+			  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[5]/span/div/i")).click();
+			  Thread.sleep(3000); // Let the user actually see something!
+			  //Click Disable
+			  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/p-menu/div/ul/li[4]/a")).click();
+			  Thread.sleep(3000); // Let the user actually see something!
+			  //Clicking Yes, Disable
+			  driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/p-dialog/div/div[3]/p-footer/button[2]")).click();
+			  Thread.sleep(3000); // Let the user actually see something!
+			  //Verifying Disabled Status
+			  String disabledStatus = driver.findElement(By.xpath("//html/body/app-root/app-usermgmt/div/div/p-datatable/div/div[1]/table/tbody/tr[2]/td[3]/span/div/div")).getText();
+			  assertTrue(disabledStatus.contains("Disabled"));
+			  
+	  }			
+}
